@@ -7,56 +7,91 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 2em;
+      margin: 0;
+      padding: 0 2em;
       background-color: #fdfdfd;
       color: #333;
       line-height: 1.6;
     }
+    h1, h2 {
+      width: 100%;
+      text-align: center;
+    }
     h1 {
       color: #003049;
-      font-size: 2.2em;
-      margin-bottom: 0.5em;
+      font-size: 3em;
+      margin: 1em 0 0.5em;
+      letter-spacing: 1px;
     }
     h2 {
       color: #005f73;
-      margin-top: 2.5em;
-      font-size: 1.6em;
+      font-size: 2em;
+      margin: 3em 0 1em;
     }
     p {
       max-width: 700px;
+      margin: 0 auto;
     }
     .visual {
-      margin: 2em 0;
+      margin: 2em auto;
+      max-width: 1000px;
     }
   </style>
 </head>
 <body>
 
   <h1>🌍 Aquí estuve yo</h1>
-  <p>Este proyecto visualiza mis viajes a lo largo de los años. Cada destino representa una experiencia distinta. A través de mapas, gráficos y trayectos, comparto cómo el movimiento fue moldeando mi historia.</p>
+  <p>Este proyecto visualiza mis viajes a lo largo de los años. Cada destino representa una experiencia distinta. A través de mapas, gráficos y trayectos, les comparto recorrido.</p>
 
   <h2>🗺️ Mapa de ciudades visitadas</h2>
-  <p>Cada circulo representa una ciudad que recorrí. ¿Cuáles son las ciudades del mundo todavia no visité? </p>
-  <div class="visual" style="min-height:332px" id="datawrapper-vis-jHt4m">
+  <p>Cada circulo representa una ciudad que recorrí. ¿Cuáles son las ciudades mas me gustaron y cuando tiempo estuve en cada una?  </p>
+  <div class="visual" id="datawrapper-vis-jHt4m">
     <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/jHt4m/embed.js" charset="utf-8" data-target="#datawrapper-vis-jHt4m"></script>
     <noscript><img src="https://datawrapper.dwcdn.net/jHt4m/full.png" alt="Mapa de ciudades visitadas" /></noscript>
   </div>
 
   <h2>🚆 Distancias entre ciudades</h2>
-  <p>Algunas rutas fueron cortas, otras extensas. Este gráfico muestra los trayectos que conectaron mis viajes: cruceros por el Egeo, trenes por Italia, ferries entre las islas filipinas. </p>
-  <div class='tableauPlaceholder' id='viz1755985155272' style='position: relative'><noscript><a href='#'><img alt='- ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecorridosentreCiudades&#47;Hoja1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RecorridosentreCiudades&#47;Hoja1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecorridosentreCiudades&#47;Hoja1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1755985155272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <p>Algunas rutas fueron cortas, otras mas extensas. Este gráfico muestra los trayectos que conectaron mis viajes: cruceros por el Egeo, trenes por Italia, ferries entre las islas filipinas. </p>
+  <div class="visual" id='viz1755985155272'>
+    <noscript><a href='#'><img alt='-' src='https://public.tableau.com/static/images/Re/RecorridosentreCiudades/Hoja1/1_rss.png' style='border: none' /></a></noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='name' value='RecorridosentreCiudades/Hoja1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Re/RecorridosentreCiudades/Hoja1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+      <param name='filter' value='publish=yes' />
+    </object>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1755985155272');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';
+      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
   <h2>📅 Ciudades por año</h2>
   <p>¿Cómo evolucionó mi vida viajera?. Algunos años fueron más intensos que otros. </p>
   <div class="visual flourish-embed flourish-chart" data-src="visualisation/24805680">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript><img src="https://public.flourish.studio/visualisation/24805680/thumbnail" width="100%" alt="Ciudades por año" /></noscript>
   </div>
-
-  <h2>🎒 Motivos de viaje</h2>
-  <p>¿Por qué viajamos? Este pictograma revela los motivos que me impulsaron: turismo, estudios, trabajo, familia. En cada ciudad una atraccion turistica distinta. </p>
+    <h2>🎒 Motivos de viaje</h2>
+  <p> Los motivos impulsaron el viaje de estos recorridos: Turismo, estudios, trabajo, familia. Cuales fueron las atracciones turisticas mas relevantes en cada ciudad? </p>
   <div class="visual flourish-embed flourish-pictogram" data-src="visualisation/24751376">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript><img src="https://public.flourish.studio/visualisation/24751376/thumbnail" width="100%" alt="Motivos de viaje" /></noscript>
   </div>
 
 </body>
+</html>
