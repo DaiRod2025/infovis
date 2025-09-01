@@ -13,28 +13,53 @@
       color: #333;
       line-height: 1.6;
     }
+
     h1, h2 {
       width: 100%;
       text-align: center;
     }
+
     h1 {
       color: #003049;
       font-size: 3em;
       margin: 1em 0 0.5em;
       letter-spacing: 1px;
     }
+
     h2 {
       color: #005f73;
-      font-size: 2em;
-      margin: 3em 0 1em;
+      font-size: 2.2em;
+      margin: 3em 0 0.5em;
     }
+
     p {
-      max-width: 700px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: 0 auto 1.5em;
+      text-align: center;
+      font-size: 1.1em;
     }
+
     .visual {
-      margin: 2em auto;
+      margin: 3em auto;
       max-width: 1000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    img {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .visual, p {
+        max-width: 100%;
+        padding: 0 1em;
+      }
     }
   </style>
 </head>
@@ -44,20 +69,20 @@
   <p>Este proyecto visualiza mis viajes a lo largo de los años. Cada destino representa una experiencia distinta. A través de mapas, gráficos y trayectos, les comparto recorrido.</p>
 
   <h2>🗺️ Mapa de ciudades visitadas</h2>
-  <p>Cada circulo representa una ciudad que recorrí. ¿Cuáles son las ciudades mas me gustaron y cuando tiempo estuve en cada una?  </p>
+  <p>Cada círculo representa una ciudad que recorrí. ¿Cuáles son las ciudades que más me gustaron y cuánto tiempo estuve en cada una?</p>
   <div class="visual" id="datawrapper-vis-jHt4m">
     <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/jHt4m/embed.js" charset="utf-8" data-target="#datawrapper-vis-jHt4m"></script>
     <noscript><img src="https://datawrapper.dwcdn.net/jHt4m/full.png" alt="Mapa de ciudades visitadas" /></noscript>
   </div>
-  
-  <h2>📊 Jerarquias y proporciones</h2>
-<p>Distintas proporciones para demostrar la intensidad de los recorridos.</p>
-<div class="visual">
- <img src="https://raw.githubusercontent.com/DaiRod2025/infovis/44b7dfe1b497a51d3e2e474d04a4ce2bb18b41b2/circulos%20.svg" alt="circulos..." width="100%">
 
+  <h2>📊 Jerarquías y proporciones</h2>
+  <p>Distintas proporciones para demostrar la intensidad de los recorridos.</p>
+  <div class="visual">
+    <img src="https://raw.githubusercontent.com/DaiRod2025/infovis/44b7dfe1b497a51d3e2e474d04a4ce2bb18b41b2/circulos%20.svg" alt="Treemap de viajes">
+  </div>
 
   <h2>🚆 Distancias entre ciudades</h2>
-  <p>Algunas rutas fueron cortas, otras mas extensas. Este gráfico muestra los trayectos que conectaron mis viajes: cruceros por el Egeo, trenes por Italia, ferries entre las islas filipinas. </p>
+  <p>Algunas rutas fueron cortas, otras más extensas. Cuáles fueron los medios de transporte conectaron mis viajes: cruceros por el Egeo, trenes por Italia, ferries entre las islas filipinas.</p>
   <div class="visual" id='viz1755985155272'>
     <noscript><a href='#'><img alt='-' src='https://public.tableau.com/static/images/Re/RecorridosentreCiudades/Hoja1/1_rss.png' style='border: none' /></a></noscript>
     <object class='tableauViz' style='display:none;'>
@@ -87,16 +112,18 @@
   </div>
 
   <h2>📅 Ciudades por año</h2>
-  <p>¿Cómo evolucionó mi vida viajera?. Algunos años fueron más intensos que otros. </p>
+  <p>¿Cómo evolucionó mi vida viajera? Algunos años fueron más intensos que otros.</p>
   <div class="visual flourish-embed flourish-chart" data-src="visualisation/24805680">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript><img src="https://public.flourish.studio/visualisation/24805680/thumbnail" width="100%" alt="Ciudades por año" /></noscript>
   </div>
-    <h2>🎒 Motivos de viaje</h2>
-  <p> Los motivos impulsaron el viaje de estos recorridos: Turismo, estudios, trabajo, familia. Cuales fueron las atracciones turisticas mas relevantes en cada ciudad? </p>
+
+  <h2>🎒 Motivos de viaje</h2>
+  <p>Los motivos impulsaron el viaje de estos recorridos: turismo, estudios, trabajo, familia. ¿Cuáles fueron las atracciones turísticas más relevantes?</p>
   <div class="visual flourish-embed flourish-pictogram" data-src="visualisation/24751376">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript><img src="https://public.flourish.studio/visualisation/24751376/thumbnail" width="100%" alt="Motivos de viaje" /></noscript>
   </div>
 
 </body>
+</html>
